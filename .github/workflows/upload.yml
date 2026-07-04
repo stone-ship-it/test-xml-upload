@@ -1,0 +1,16 @@
+name: Upload Test Results
+
+on: [workflow_dispatch]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Upload JUnit results
+      uses: EnricoMi/publish-unit-test-result-action@v2
+      with:
+        files: junit_report.xml
