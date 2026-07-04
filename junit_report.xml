@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+  <testsuite name="AllTest" tests="3" failures="3" errors="0" skipped="0" time="33.291" timestamp="2026-07-03T15:44:11">
+    <properties />
+    <testcase classname="Security Operations (Arming/Disarming)" name="SEC_005 Night" time="5.150">
+      <failure message="1 step(s) failed."><![CDATA[Step:
+Click Night, the touchpad enters night mode and broadcasts the voice prompt "night".
+
+Action:
+Arm Night
+
+Page:
+main
+
+Message:
+Arm night action failed, status: Disarmed]]></failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Action:
+Check Status
+
+Page:
+main
+
+Result:
+PASS
+
+Duration:
+2334 ms
+
+Message:
+Status check passed. Expected and actual status: Disarmed
+]]></system-out>
+    </testcase>
+    <testcase classname="Security Operations (Arming/Disarming)" name="SEC_006 Armed Night Disarm" time="0.000">
+      <failure message="1 step(s) failed."><![CDATA[Step:
+Check whether the Arm Status is Armed Night
+
+Action:
+Check Status
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Armed Night, Actual: Disarmed]]></failure>
+    </testcase>
+    <testcase classname="Security Operations (Arming/Disarming)" name="SEC_007 Entry Delay On" time="0.000">
+      <failure message="1 step(s) failed."><![CDATA[Step:
+Close Sensor
+
+Action:
+Close
+
+Page:
+sensor
+
+Message:
+Failed to close sensor 'zone 1': app is not running.]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
