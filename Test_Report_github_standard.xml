@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TouchPad Automation - RUN-20260710103000-001 (Pass Rate: 80.0%)" tests="5" failures="1" errors="0" skipped="0" time="28.540" timestamp="2026-07-10T10:30:00.000">
+    <properties>
+      <property name="tool" value="TouchPad AutoTest"/>
+      <property name="suite" value="TouchPad Automation Test Suite"/>
+      <property name="run_id" value="RUN-20260710103000-001"/>
+      <property name="timestamp" value="2026-07-10T10:30:00.000"/>
+      <property name="total_cases" value="5"/>
+      <property name="passed_cases" value="4"/>
+      <property name="failed_cases" value="1"/>
+      <property name="pass_rate" value="80.0%"/>
+    </properties>
+    <testcase classname="security.arming" name="SEC_001 Arm Stay" time="5.230">
+      <system-out><![CDATA[==================================================
+Step: Check whether the Arm Status is Disarmed
+Result: Passed
+Duration: 1500 ms
+Message: Status check passed. Expected and actual status: Disarmed
+
+==================================================
+Step: Check whether the Exit delay Status is Ready to Arm
+Result: Passed
+Duration: 800 ms
+Message: Exit delay status check passed. Expected and actual status: Ready to Arm
+
+==================================================
+Step: Click Arm Stay
+Result: Passed
+Duration: 2930 ms
+Message: Arm stay action completed successfully.]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_002 Armed Stay Disarm" time="4.850">
+      <system-out><![CDATA[==================================================
+Step: Check whether the Arm Status is Armed Stay
+Result: Passed
+Duration: 1200 ms
+Message: Status check passed. Expected and actual status: Armed Stay
+
+==================================================
+Step: Enter user code to disarm
+Result: Passed
+Duration: 3650 ms
+Message: Disarm action completed successfully.]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_003 Arm Away" time="6.120">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step: Wait for Status: Armed Away
+Action: Timeout reached. Desired status 'Armed Away' not achieved.
+Page: main
+Message: Timeout reached. Desired status 'Armed Away' not achieved.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step: Check whether the Arm Status is Disarmed
+Result: Passed
+Duration: 1300 ms
+Message: Status check passed. Expected and actual status: Disarmed
+
+==================================================
+Step: Click Arm Away
+Result: Passed
+Duration: 3200 ms
+Message: Arm away action completed successfully.
+
+==================================================
+Step: Wait for Status: Armed Away
+Result: Failed
+Duration: 1620 ms
+Message: Timeout reached. Desired status 'Armed Away' not achieved.]]></system-out>
+    </testcase>
+    <testcase classname="zone.management" name="ZON_001 Zone Edit" time="6.890">
+      <system-out><![CDATA[==================================================
+Step: Navigate to Zone Management page
+Result: Passed
+Duration: 2100 ms
+Message: Successfully navigated to Zone Management page.
+
+==================================================
+Step: Select zone 1 for editing
+Result: Passed
+Duration: 1800 ms
+Message: Zone 1 selected successfully.
+
+==================================================
+Step: Update zone name to 'Front Door'
+Result: Passed
+Duration: 2990 ms
+Message: Zone name updated successfully to 'Front Door'.]]></system-out>
+    </testcase>
+    <testcase classname="system.settings" name="SET_001 Display Brightness" time="5.450">
+      <system-out><![CDATA[==================================================
+Step: Navigate to System Settings
+Result: Passed
+Duration: 1500 ms
+Message: Successfully navigated to System Settings.
+
+==================================================
+Step: Set brightness level to 50%
+Result: Passed
+Duration: 3950 ms
+Message: Brightness level set to 50% successfully.]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>
