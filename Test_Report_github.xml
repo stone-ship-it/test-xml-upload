@@ -1,0 +1,1022 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AllTest" tests="30" failures="26" errors="0" skipped="0" time="1699.206" timestamp="2026-07-10T02:33:12.714">
+  <properties>
+      <property name="tool" value="TouchPad AutoTest"/>
+      <property name="suite" value="AllTest"/>
+      <property name="run_id" value="RUN-20260710023312-1"/>
+      <property name="timestamp" value="2026-07-10T02:33:12.714"/>
+  </properties>
+    <testcase classname="security.arming" name="SEC_001 Arm Stay" time="102.510">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Wait for Status: Armed Stay
+
+Action:
+Timeout reached. Desired status 'Armed Stay' not achieved.
+
+Page:
+main
+
+Message:
+Timeout reached. Desired status 'Armed Stay' not achieved.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Result:
+Passed
+
+Duration:
+3434.4604 ms
+
+Message:
+Status check passed. Expected and actual status: Disarmed
+
+
+
+==================================================
+Step:
+Check whether the Exit delay Status is Ready to Arm
+
+Result:
+Passed
+
+Duration:
+2536.5244 ms
+
+Message:
+Exit delay status check passed. Expected and actual status: Ready to Arm
+
+
+
+==================================================
+Step:
+Switch Audio
+
+Result:
+Passed
+
+Duration:
+2940.3857000000003 ms
+
+Message:
+SwitchAudio action completed. Desired state: On
+
+
+
+==================================================
+Step:
+Switch Entry Delay
+
+Result:
+Passed
+
+Duration:
+2967.4757 ms
+
+Message:
+SwitchEntryDelay action completed. Desired state: On
+
+
+
+==================================================
+Step:
+Click Arm Stay
+
+Result:
+Passed
+
+Duration:
+27064.5702 ms
+
+Message:
+Arm stay action completed successfully.
+
+
+
+==================================================
+Step:
+Wait for Status: Armed Stay
+
+Result:
+Failed
+
+Duration:
+62868.8353 ms
+
+Message:
+Timeout reached. Desired status 'Armed Stay' not achieved.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_002 Armed stay Disarm" time="6.243">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Armed Stay
+
+Action:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Armed Stay
+
+Result:
+Failed
+
+Duration:
+5566.4625 ms
+
+Message:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_003 Arm Away" time="6.136">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Disarmed
+
+Action:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Result:
+Failed
+
+Duration:
+5449.156999999999 ms
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_004 Armed Away Disarm" time="6.261">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Armed Stay
+
+Action:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Armed Stay
+
+Result:
+Failed
+
+Duration:
+5564.5743 ms
+
+Message:
+Status check failed. Expected: Armed Stay, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_005 Night" time="6.012">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Disarmed
+
+Action:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Result:
+Failed
+
+Duration:
+5279.504 ms
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_006 Armed Night Disarm" time="6.473">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Armed Night
+
+Action:
+Status check failed. Expected: Armed Night, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Armed Night, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Check whether the Arm Status is Armed Night
+
+Result:
+Failed
+
+Duration:
+5778.6455 ms
+
+Message:
+Status check failed. Expected: Armed Night, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_007 Entry Delay On" time="12.061">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Disarmed
+
+Action:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Close Sensor
+
+Result:
+Passed
+
+Duration:
+4528.7924 ms
+
+Message:
+Sensor 'zone 1' closed successfully.
+
+
+
+==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Result:
+Failed
+
+Duration:
+6844.8812 ms
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="security.arming" name="SEC_008 Entry Delay Off" time="11.303">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check whether the Arm Status is Disarmed
+
+Action:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+Page:
+main
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Close Sensor
+
+Result:
+Passed
+
+Duration:
+4715.8659 ms
+
+Message:
+Sensor 'zone 1' closed successfully.
+
+
+
+==================================================
+Step:
+Check whether the Arm Status is Disarmed
+
+Result:
+Failed
+
+Duration:
+5920.009300000001 ms
+
+Message:
+Status check failed. Expected: Disarmed, Actual: Arming Stay
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Zone.Management" name="ZON_001 Zone Edit" time="115.619">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Rename zone
+
+Action:
+Zone with name containing 'zone 1' not found.
+
+Page:
+main
+
+Message:
+Zone with name containing 'zone 1' not found.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Rename zone
+
+Result:
+Failed
+
+Duration:
+114939.939 ms
+
+Message:
+Zone with name containing 'zone 1' not found.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Panic.Functions" name="PNC_001 Police Panic" time="34.329">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Tap Panic in the lower-left corner to open the Panic screen. Then press and hold Police Panic until the progress bar completes.
+
+Action:
+Unexpected scene variant after tapping Police Panic: Dashboard
+
+Page:
+main
+
+Message:
+Unexpected scene variant after tapping Police Panic: Dashboard]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Tap Panic in the lower-left corner to open the Panic screen. Then press and hold Police Panic until the progress bar completes.
+
+Result:
+Failed
+
+Duration:
+33642.218499999995 ms
+
+Message:
+Unexpected scene variant after tapping Police Panic: Dashboard
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Panic.Functions" name="PNC_002 Fire Panic" time="49.527" />
+    <testcase classname="Panic.Functions" name="PNC_003 Auxiliary Panic" time="48.942" />
+    <testcase classname="System.Settings" name="SET_001 Touchpad-Display-Brightness setting" time="126.391">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Tap Touchpad → Display → Brightness and set the brightness level to 1
+
+Action:
+Step timed out after 120000ms
+
+Page:
+main
+
+Message:
+Step timed out after 120000ms]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Tap Touchpad → Display → Brightness and set the brightness level to 1
+
+Result:
+Failed
+
+Duration:
+125675.1397 ms
+
+Message:
+Step timed out after 120000ms
+
+]]></system-out>
+    </testcase>
+    <testcase classname="System.Settings" name="SET_002 Touchpad-Display-Clean Screen" time="99.181">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Enter touchpad display setting, Clean Screen
+
+Action:
+Screen not detected after Clean Screen countdown.
+
+Page:
+main
+
+Message:
+Screen not detected after Clean Screen countdown.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Enter touchpad display setting, Clean Screen
+
+Result:
+Failed
+
+Duration:
+97861.312 ms
+
+Message:
+Screen not detected after Clean Screen countdown.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="System.Settings" name="SET_003 Touchpad-sound setting" time="122.556">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Tap Touchpad, select sound and Media volume, set volume to 4
+
+Action:
+Step timed out after 120000ms
+
+Page:
+main
+
+Message:
+Step timed out after 120000ms]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Tap Touchpad, select sound and Media volume, set volume to 4
+
+Result:
+Failed
+
+Duration:
+121521.9279 ms
+
+Message:
+Step timed out after 120000ms
+
+]]></system-out>
+    </testcase>
+    <testcase classname="System.Settings" name="SET_004 Touchpad-Power off" time="132.226">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Tap Touchpad, select power off, click cancel
+
+Action:
+Step timed out after 120000ms
+
+Page:
+main
+
+Message:
+Step timed out after 120000ms]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Tap Touchpad, select power off, click cancel
+
+Result:
+Failed
+
+Duration:
+131479.34230000002 ms
+
+Message:
+Step timed out after 120000ms
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Event.Log" name="LOG_001 Event log" time="25.366">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Tap the calendar icon in the top-right corner
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Tap the calendar icon in the top-right corner
+
+Result:
+Failed
+
+Duration:
+24518.8353 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="User..PIN.Management" name="USR_001 User setting" time="101.692">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Enter the Display Name (ZP) and password (6666), then tap Save
+
+Action:
+Failed to enter InstallerSetting-Users
+
+Page:
+main
+
+Message:
+Failed to enter InstallerSetting-Users]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Enter the Display Name (ZP) and password (6666), then tap Save
+
+Result:
+Failed
+
+Duration:
+100986.1385 ms
+
+Message:
+Failed to enter InstallerSetting-Users
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-001 Door sensor status" time="133.615" />
+    <testcase classname="Sensor.status" name="STS-002 Door sensor status" time="104.411" />
+    <testcase classname="Sensor.status" name="STS-003 Motion sensor status" time="18.915">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Motion sensor low battery
+
+Result:
+Passed
+
+Duration:
+5291.1519 ms
+
+Message:
+Low battery set successfully for sensor 'MotionSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+12917.0831 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-004 Motion sensor status" time="15.668">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Motion sensor Tamper
+
+Result:
+Passed
+
+Duration:
+4643.2265 ms
+
+Message:
+Tamper set successfully for sensor 'MotionSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+10280.2214 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-005 Water sensor status" time="16.166">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Water sensor low battery
+
+Result:
+Passed
+
+Duration:
+5562.8116 ms
+
+Message:
+Low battery set successfully for sensor 'WaterSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+9906.6238 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-006 Water sensor status" time="14.673">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Water sensor Tamper
+
+Result:
+Passed
+
+Duration:
+4665.0713000000005 ms
+
+Message:
+Tamper set successfully for sensor 'WaterSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+9317.749 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-007 Keyfor sensor status" time="118.954">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Failed to verify Keyfob 1 status value as 'Low Battery'.
+
+Page:
+main
+
+Message:
+Failed to verify Keyfob 1 status value as 'Low Battery'.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Keyfor sensor low battery
+
+Result:
+Passed
+
+Duration:
+6219.2364 ms
+
+Message:
+Low battery set successfully for sensor 'Keyfob 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+112028.0109 ms
+
+Message:
+Failed to verify Keyfob 1 status value as 'Low Battery'.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-008 Medical sensor status" time="71.907">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Failed to verify MedicalSensor 1 status value as 'Low Battery'.
+
+Page:
+main
+
+Message:
+Failed to verify MedicalSensor 1 status value as 'Low Battery'.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Medical sensor low battery
+
+Result:
+Passed
+
+Duration:
+4616.873100000001 ms
+
+Message:
+Low battery set successfully for sensor 'MedicalSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+66591.9105 ms
+
+Message:
+Failed to verify MedicalSensor 1 status value as 'Low Battery'.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-009 Smoke sensor status" time="82.044">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Failed to verify SmokeSensor 1 status value as 'Low Battery'.
+
+Page:
+main
+
+Message:
+Failed to verify SmokeSensor 1 status value as 'Low Battery'.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Smoke sensor low battery
+
+Result:
+Passed
+
+Duration:
+6007.939600000001 ms
+
+Message:
+Low battery set successfully for sensor 'SmokeSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+75356.41579999999 ms
+
+Message:
+Failed to verify SmokeSensor 1 status value as 'Low Battery'.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-010 Smoke sensor status" time="75.848">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Failed to verify SmokeSensor 1 status value as 'Tampered'.
+
+Page:
+main
+
+Message:
+Failed to verify SmokeSensor 1 status value as 'Tampered'.]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger Smoke sensor Tamper
+
+Result:
+Passed
+
+Duration:
+6155.8056 ms
+
+Message:
+Tamper set successfully for sensor 'SmokeSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+68686.4743 ms
+
+Message:
+Failed to verify SmokeSensor 1 status value as 'Tampered'.
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-011 CO sensor status" time="17.089">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger CO Sensor low battery
+
+Result:
+Passed
+
+Duration:
+4734.751 ms
+
+Message:
+Low battery set successfully for sensor 'CoSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+11680.0321 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+    <testcase classname="Sensor.status" name="STS-012 CO sensor status" time="17.090">
+      <failure type="ASSERT_FAIL" message="1 step(s) failed.">
+<![CDATA[Step:
+Check status in System-Device Page
+
+Action:
+Screen not detected
+
+Page:
+main
+
+Message:
+Screen not detected]]>
+      </failure>
+      <system-out><![CDATA[==================================================
+Step:
+Trigger CO sensor Tamper
+
+Result:
+Passed
+
+Duration:
+5020.0842 ms
+
+Message:
+Tamper set successfully for sensor 'CoSensor 1'.
+
+
+
+==================================================
+Step:
+Check status in System-Device Page
+
+Result:
+Failed
+
+Duration:
+11403.6003 ms
+
+Message:
+Screen not detected
+
+]]></system-out>
+    </testcase>
+</testsuite>
